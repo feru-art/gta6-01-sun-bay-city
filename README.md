@@ -1,8 +1,8 @@
 # Sun Bay — Make GTA 6
 
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-[![Node.js](https://img.shields.io/badge/Node-22%2B-339933.svg)](https://nodejs.org/)
-[![make.fun bounty](https://img.shields.io/badge/make.fun-gta6--01-blueviolet.svg)](https://make.fun/bounty/gta6-01)
+[![make.fun · gta6-01](https://make.fun/badge/gta6-01.svg)](https://make.fun/bounty/gta6-01?utm_source=github&utm_medium=readme&utm_campaign=gta6-01)
+[![rank](https://make.fun/badge/gta6-01/feru-art/gta6-01-sun-bay-city/rank.svg)](https://make.fun/bounty/gta6-01/leaderboard?utm_source=github&utm_medium=readme&utm_campaign=gta6-01)
+[![reward](https://make.fun/badge/gta6-01/feru-art/gta6-01-sun-bay-city/reward.svg)](https://make.fun/bounty/gta6-01?utm_source=github&utm_medium=readme&utm_campaign=gta6-01)
 
 An open-world crime game in the spirit of GTA 6, built for the
 [make.fun "Make GTA 6" bounty](https://make.fun/bounty/gta6-01)
