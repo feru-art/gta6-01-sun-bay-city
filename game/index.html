@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Marisol — Neon Tide</title>
+<style>
+  html, body { margin: 0; padding: 0; background: #0b0e1a; overflow: hidden;
+    font-family: "Segoe UI", system-ui, sans-serif; }
+  #game { display: block; width: 100vw; height: 100vh; }
+  #title { position: fixed; inset: 0; display: flex; flex-direction: column;
+    align-items: center; justify-content: flex-end; color: #fff;
+    background: #0b0e1a url("assets/golden-hour.webp") center/cover no-repeat;
+    text-shadow: 0 2px 10px rgba(0,0,0,.8); z-index: 5; }
+  #title h1 { font-size: 64px; letter-spacing: 10px; margin: 0 0 4px;
+    color: #ffd9a0; }
+  #title h2 { font-size: 22px; letter-spacing: 6px; margin: 0 0 18px;
+    color: #7fe7ff; font-weight: 600; }
+  #title .press { font-size: 20px; margin: 0 0 14px; animation: blink 1.2s infinite; }
+  #title .keys { font-size: 14px; opacity: .92; margin: 0 0 26px; line-height: 1.7;
+    background: rgba(0,0,0,.45); padding: 10px 18px; border-radius: 10px; }
+  @keyframes blink { 50% { opacity: .25; } }
+  #pause { position: fixed; inset: 0; display: none; align-items: center;
+    justify-content: center; background: rgba(5,8,20,.72); color: #fff; z-index: 6;
+    text-align: center; }
+  #pause h1 { font-size: 40px; letter-spacing: 8px; margin-bottom: 10px; }
+</style>
+</head>
+<body>
+<canvas id="game"></canvas>
+<div id="title">
+  <h1>MARISOL</h1>
+  <h2>NEON TIDE</h2>
+  <div class="press">PRESS ENTER TO PLAY</div>
+  <div class="keys">
+    WASD / Arrows — move &amp; drive &nbsp;·&nbsp; Shift — run &nbsp;·&nbsp; E — enter / exit car<br>
+    Space — punch / handbrake &nbsp;·&nbsp; F — shoot &nbsp;·&nbsp; T — taxi job &nbsp;·&nbsp; R — race<br>
+    P — pause &nbsp;·&nbsp; M — mute &nbsp;·&nbsp; H — honk &nbsp;·&nbsp; S — save game
+  </div>
+</div>
+<div id="pause"><div><h1>PAUSED</h1><p>Press P to resume · S to save · progress autosaves after each mission</p></div></div>
+<script type="module" src="src/main.js"></script>
+</body>
+</html>
