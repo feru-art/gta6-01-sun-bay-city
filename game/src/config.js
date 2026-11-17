@@ -6,9 +6,10 @@ export const WORLD_H = 1900;
 export const ROAD = 96; // road width in world pixels
 export const BLOCK = 300; // city block pitch
 
-// Variant is chosen by ?variant=chase|story|heat|golden|sandbox (default chase).
+// Variant is chosen by ?variant=chase|story|heat|golden|sandbox (default sandbox:
+// V5 is the activities cut — street races, parcel runs, shops and sun coins).
 export function variantFromUrl() {
-  const v = new URLSearchParams(location.search).get('variant') || 'chase';
+  const v = new URLSearchParams(location.search).get('variant') || 'sandbox';
   return ['chase', 'story', 'heat', 'golden', 'sandbox'].includes(v) ? v : 'chase';
 }
 
