@@ -6,9 +6,10 @@ export const WORLD_H = 1900;
 export const ROAD = 96; // road width in world pixels
 export const BLOCK = 300; // city block pitch
 
-// Variant is chosen by ?variant=chase|story|heat|golden|sandbox (default chase).
+// Variant is chosen by ?variant=chase|story|heat|golden|sandbox (default story:
+// V2 is the story-mission cut — Rosa, Marco and Dena's three-act chain).
 export function variantFromUrl() {
-  const v = new URLSearchParams(location.search).get('variant') || 'chase';
+  const v = new URLSearchParams(location.search).get('variant') || 'story';
   return ['chase', 'story', 'heat', 'golden', 'sandbox'].includes(v) ? v : 'chase';
 }
 
